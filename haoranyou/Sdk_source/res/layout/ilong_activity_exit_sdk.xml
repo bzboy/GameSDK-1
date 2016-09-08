@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#33ffffff" >
+
+    
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/ilong_login_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/title_bar"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:gravity="center" 
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/icon_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/biglogo" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="玩累了，休息一会儿!"
+                android:textColor="@color/new_login_orange_textcolor"
+                android:textSize="18sp" />
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+                <ImageView 
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:layout_marginRight="6dp"
+                    android:src="@drawable/ilong_exit_sdk_question"
+                    />
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="确认退出游戏"
+                    android:textColor="@android:color/darker_gray"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+        <View
+            android:layout_marginTop="22dp"
+            android:layout_width="280dp"
+            android:layout_height="1px"
+            android:background="#b4b4b4" />
+
+
+
+        <LinearLayout
+            android:layout_width="280dp"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            >
+            <LinearLayout 
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="60dp"
+    			android:gravity="center"
+                >
+                <Button
+                android:id="@+id/ilong_exit_sdk_out_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+           		android:gravity="center"
+                android:background="@drawable/exit_sdk_exitgamebtn__white"
+                android:text="退出游戏"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+            </LinearLayout>
+			<LinearLayout 
+			    android:layout_width="0dp"
+			    android:layout_weight="1"
+                android:layout_height="60dp"
+				android:gravity="center"
+			    >
+			   <Button
+                android:id="@+id/ilong_exit_sdk_continue_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/exit_sdk_gogamebtn_orange"
+                android:text="继续游戏"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+			</LinearLayout>
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

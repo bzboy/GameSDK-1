@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center" >
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="320dip"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ilong_login_bg"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="账户升级"
+                    android:textColor="@color/new_login_blue_textcolor"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/ilong_update_switch_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@android:color/transparent"
+                    android:drawableLeft="@drawable/ilong_icon_switchaccount"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:text="切换账号"
+                    android:textColor="@color/new_login_blue_textcolor"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/new_login_blue_textcolor" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:id="@+id/ilong_reg_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/ilong_radius_white_bg"
+                        android:orientation="vertical" >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="44dp" >
+
+                            <ImageView
+                                android:id="@+id/name_icon"
+                                android:layout_width="44dp"
+                                android:layout_height="44dp"
+                                android:layout_centerVertical="true"
+                                android:padding="12dp"
+                                android:src="@drawable/ilong_icon_phone" />
+
+                            <View
+                                android:layout_width="1px"
+                                android:layout_height="30dp"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@id/name_icon"
+                                android:background="#bdbdbd" />
+
+                            <EditText
+                                android:id="@+id/ilong_reg_usernme"
+                                android:layout_width="match_parent"
+                                android:layout_height="44dp"
+                                android:layout_marginLeft="1px"
+                                android:layout_toRightOf="@id/name_icon"
+                                android:background="@null"
+                                android:hint="请输入字母开头的用户名"
+                                android:imeOptions="actionNext"
+                                android:inputType="text"
+                                android:maxLength="12"
+                                android:paddingLeft="12dp"
+                                android:singleLine="true"
+                                android:textColorHint="#bebebe"
+                                android:textSize="14sp" />
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:background="@color/new_login_blue_textcolor" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="44dp" >
+
+                            <ImageView
+                                android:id="@+id/p_icon"
+                                android:layout_width="44dp"
+                                android:layout_height="44dp"
+                                android:layout_centerVertical="true"
+                                android:padding="12dp"
+                                android:src="@drawable/reg_p_open" />
+
+                            <View
+                                android:layout_width="1px"
+                                android:layout_height="30dp"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@id/p_icon"
+                                android:background="#bdbdbd" />
+
+                            <EditText
+                                android:id="@+id/ilong_reg_pwd"
+                                android:layout_width="match_parent"
+                                android:layout_height="44dp"
+                                android:layout_marginLeft="1px"
+                                android:layout_toRightOf="@id/p_icon"
+                                android:background="@null"
+                                android:hint="请输入密码"
+                                android:imeOptions="actionNext"
+                                android:inputType="textPassword"
+                                android:maxLength="16"
+                                android:paddingLeft="12dp"
+                                android:singleLine="true"
+                                android:textColorHint="#bebebe"
+                                android:textSize="14sp" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp" >
+
+                        <ImageView
+                            android:id="@+id/v_icon"
+                            android:layout_width="44dp"
+                            android:layout_height="44dp"
+                            android:layout_centerVertical="true"
+                            android:padding="12dp"
+                            android:src="@drawable/right"
+                            android:visibility="invisible" />
+
+                        <View
+                            android:layout_width="1px"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@id/v_icon"
+                            android:background="#bdbdbd" />
+
+                        <EditText
+                            android:id="@+id/v_edittext"
+                            android:layout_width="match_parent"
+                            android:layout_height="44dp"
+                            android:layout_marginLeft="1px"
+                            android:layout_toLeftOf="@id/get_verif_button"
+                            android:layout_toRightOf="@id/v_icon"
+                            android:background="@null"
+                            android:hint="请确认密码"
+                            android:imeOptions="actionDone"
+                            android:inputType="textPassword"
+                            android:maxLength="16"
+                            android:paddingLeft="12dp"
+                            android:singleLine="true"
+                            android:textColorHint="#bebebe"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@color/new_login_blue_textcolor" />
+                </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/ilong_progress_login"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerInParent="true"
+                    android:indeterminateDrawable="@drawable/ilong_login_loading_blue"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/ilong_update_user_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:background="@drawable/ilong_update_user_cancel"
+                    android:text="取消"
+                    android:textColor="#939292"
+                    android:textSize="18sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/ilong_update_user_confirm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:background="@drawable/ilong_update_user_confirm"
+                    android:text="确定"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="2dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="温馨提示：您的账号尚未设置用户名，为了您的账号安全和利益，请升级为浩然游账号。"
+                android:textSize="10sp" 
+                android:textColor="@color/new_login_orange_textcolor"
+                />
+            <!--android:textColor="#bebebe" 以前的配色方案-->
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

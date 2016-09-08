@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+	
+      <WebView
+          android:id="@+id/ilong_user_web"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent" />
+
+
+ 		<RelativeLayout 
+ 		    android:id="@+id/IlongActivity_web_title_ll"
+ 		    android:layout_width="match_parent"
+ 		    android:layout_height="52dp"
+			
+ 		    android:background="@android:color/white"
+ 		    android:visibility="gone"
+ 		    >
+
+			<RelativeLayout
+			     android:id="@+id/IlongActivity_web_back"
+			    android:layout_width="wrap_content"
+			    android:layout_height="match_parent"
+			    android:layout_alignParentLeft="true"
+			    android:paddingLeft="15dp"
+			    android:paddingRight="15dp"
+			    >
+
+			    <ImageView 
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			       	android:layout_centerInParent="true"
+			        android:src="@drawable/ilongactivityweb_return_btn" 
+			      
+			        />
+			</RelativeLayout>
+ 		    <RelativeLayout 
+			    android:layout_width="wrap_content"
+			    android:layout_height="match_parent"
+			    android:layout_centerInParent="true"
+			    >
+			    <TextView 
+			          android:id="@+id/IlongActivity_web_title"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_centerInParent="true"
+			        android:text="用户中心"
+			        android:textColor="@color/new_login_orange_textcolor"
+              		android:textSize="20sp" 
+			        />
+			    
+			</RelativeLayout>
+			<RelativeLayout 
+			    android:layout_alignParentRight="true"
+			    android:paddingLeft="15dp"
+			    android:paddingRight="15dp"
+			    android:id="@+id/IlongActivityWeb_ShareBtn"
+			    android:layout_width="wrap_content"
+			    android:layout_height="match_parent"
+			    android:visibility="invisible"
+			    >
+			    <ImageView 
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+					android:layout_centerInParent="true"
+			         android:src="@drawable/ilongactivityweb_sharebtn"
+			        />
+			    
+			</RelativeLayout>
+ 		</RelativeLayout>
+
+	<View 
+	        android:layout_below="@id/IlongActivity_web_title_ll"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/new_login_orange_textcolor"
+            />
+	
+	<RelativeLayout 
+	    android:id="@+id/IlongActivityWeb_loading_parent"
+	    android:layout_height="80dp"
+	    android:layout_width="80dp"
+	    android:layout_centerInParent="true"
+	    android:background="@drawable/ilongyuan_loading_web_background"
+	    android:visibility="visible"
+	    >
+		<ImageView 
+		    android:id="@+id/IlongActivityWeb_Loading"
+		    android:layout_height="30dp"
+		    android:layout_width="30dp"
+		    android:layout_centerHorizontal="true"
+		    android:layout_marginTop="10dp"
+		    android:src="@drawable/ilongyuan_loading_web"
+		    />
+		<TextView 
+		    android:layout_centerHorizontal="true"
+		    android:layout_below="@id/IlongActivityWeb_Loading"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="10dp"
+		    android:layout_width="wrap_content"
+		    android:text="loading..."
+		    android:textColor="@color/new_login_orange_textcolor"
+		    />
+	</RelativeLayout>
+</RelativeLayout>

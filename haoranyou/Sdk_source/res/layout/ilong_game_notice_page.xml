@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="326dp"
+        android:layout_centerInParent="true"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="290dp"
+            android:layout_height="45dp"
+            android:background="@drawable/game_notice_page_title_bg" >
+
+            <TextView
+                android:id="@+id/game_notice_page_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:text="游戏公告"
+                android:textColor="#fe9901"
+                android:textSize="16dp" />
+            <!-- android:textColor="#fe9901" -->
+
+            <LinearLayout
+                android:id="@+id/game_notice_page_close_Btn"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:clickable="true"
+                android:gravity="center" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="17dp"
+                    android:src="@drawable/game_notice_page_close_btn" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <WebView
+            android:id="@+id/game_notice_page_web"
+            android:layout_width="290dp"
+            android:layout_height="244dp"
+            android:background="@drawable/game_notice_web_bg" />
+
+        <LinearLayout
+            android:layout_width="290dp"
+            android:layout_height="36dp"
+            android:background="@drawable/game_notice_page_bottom_bg"
+            android:gravity="center" >
+
+            <CheckBox
+                android:id="@+id/game_notice_page_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:button="@null"
+                android:drawableLeft="@drawable/game_notice_page_checkbox_selector"
+                android:drawablePadding="6dp"
+                android:text="此次活动不再提示"
+                android:textColor="#7f7f7b" />
+            <!-- android:textColor="#7f7f7b" -->
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

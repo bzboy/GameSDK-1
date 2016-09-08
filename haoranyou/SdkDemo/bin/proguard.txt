@@ -1,0 +1,45 @@
+# view AndroidManifest.xml #generated:92
+-keep class com.alipay.sdk.app.H5PayActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:74
+-keep class com.hr.sdk.ac.ActivityBindPhone { <init>(...); }
+
+# view AndroidManifest.xml #generated:114
+-keep class com.hr.sdk.ac.ActivityGameNoticePage { <init>(...); }
+
+# view AndroidManifest.xml #generated:79
+-keep class com.hr.sdk.ac.ActivityUpdateAccount { <init>(...); }
+
+# view AndroidManifest.xml #generated:69
+-keep class com.hr.sdk.ac.ActivityUser { <init>(...); }
+
+# view AndroidManifest.xml #generated:51
+-keep class com.hr.sdk.ac.ActivityWeb { <init>(...); }
+
+# view AndroidManifest.xml #generated:64
+-keep class com.hr.sdk.ac.ExitSDKActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:58
+-keep class com.hr.sdk.ac.SdkLoginActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:108
+-keep class com.hr.sdk.gamecenter.GameService { <init>(...); }
+
+# view AndroidManifest.xml #generated:86
+-keep class com.hr.sdk.pay.LyPayActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:102
+-keep class com.hr.sdk.pay.tenpay.LyCftPayActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:32
+-keep class com.hr.sdkdemo.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:42
+-keep class com.hr.sdkdemo.TestCoupon { <init>(...); }
+
+# view AndroidManifest.xml #generated:101
+-keep class com.unionpay.uppay.PayActivity { <init>(...); }
+
+# onClick res/layout/ilong_activity_bind_phone.xml #generated:26
+-keepclassmembers class * { *** backPress(...); }
+
