@@ -1,0 +1,48 @@
+# view AndroidManifest.xml #generated:90
+-keep class com.alipay.sdk.app.H5PayActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:31
+-keep class com.ilongyuan.sdk.demo.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:73
+-keep class com.longyuan.sdk.ac.ActivityBindPhone { <init>(...); }
+
+# view AndroidManifest.xml #generated:115
+-keep class com.longyuan.sdk.ac.ActivityGameNoticePage { <init>(...); }
+
+# view AndroidManifest.xml #generated:78
+-keep class com.longyuan.sdk.ac.ActivityUpdateAccount { <init>(...); }
+
+# view AndroidManifest.xml #generated:68
+-keep class com.longyuan.sdk.ac.ActivityUser { <init>(...); }
+
+# view AndroidManifest.xml #generated:50
+-keep class com.longyuan.sdk.ac.ActivityWeb { <init>(...); }
+
+# view AndroidManifest.xml #generated:63
+-keep class com.longyuan.sdk.ac.ExitSDKActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:57
+-keep class com.longyuan.sdk.ac.SdkLoginActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:106
+-keep class com.longyuan.sdk.gamecenter.FloatViewService { <init>(...); }
+
+# view AndroidManifest.xml #generated:85
+-keep class com.longyuan.sdk.pay.LyPayActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:100
+-keep class com.longyuan.sdk.pay.tenpay.LyCftPayActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:42
+-keep class com.longyuan.sdkdemo.TestCoupon { <init>(...); }
+
+# view AndroidManifest.xml #generated:99
+-keep class com.unionpay.uppay.PayActivity { <init>(...); }
+
+# onClick res/layout/ilong_activity_bind_phone.xml #generated:26
+-keepclassmembers class * { *** backPress(...); }
+
+# onClick res/layout/activity_demo_main.xml #generated:138
+-keepclassmembers class * { *** click(...); }
+
